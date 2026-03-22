@@ -11,9 +11,10 @@ import {
 const router = express.Router();
 
 router.post("/createRecipe", createRecipe);
+
 router.get("/getAllRecipes", getAllRecipes);
 router.get("/getRecipeById/:id", getRecipeById);
 router.put("/updateRecipe/:id", updateRecipe);
-router.delete("/:id", deleteRecipe);
+router.delete("deleteRecipe/:id", deleteRecipe);
 
 export default router; // ✅ ES module export
