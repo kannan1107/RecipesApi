@@ -15,6 +15,7 @@ router.post("/createRecipe", createRecipe);
 router.get("/getAllRecipes", getAllRecipes);
 router.get("/getRecipeById/:id", getRecipeById);
 router.put("/updateRecipe/:id", updateRecipe);
-router.delete("deleteRecipe/:id", deleteRecipe);
+router.delete("/deleteRecipe/:id", deleteRecipe);
+
 
 export default router; // ✅ ES module export
